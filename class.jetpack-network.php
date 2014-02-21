@@ -485,7 +485,9 @@ class Jetpack_Network {
 		$secrets[0] . ':' .$secrets[1]. ':' . $secrets[2] 
 	    );
 
-	    // Gra info for gmt offset
+	    /**
+	     * Grabs the gmt offset
+	     */
 	    $gmt_offset = get_option( 'gmt_offset' ); 
 	    if ( ! $gmt_offset ) { 
 		$gmt_offset = 0;
